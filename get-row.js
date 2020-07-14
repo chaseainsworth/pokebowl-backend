@@ -4,10 +4,18 @@
 // Check it out to see its content and shape!
 const pokemon = require('./pokemon.js');
 
+const getRow = function(str) {
+  let result = [];
 
+  for (const mon of pokemon) {
+    if (str === mon[0]) {
 
-
-// OUR code here.
+      result.push(mon[0])
+    
+    }
+  }
+  return result;
+}
 
 if (typeof getRow === 'undefined') {
   getRow = undefined;
